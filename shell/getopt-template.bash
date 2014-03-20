@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEMP=`getopt -o at:c: --long all,dry,targets:,command: -n 'getopt-template.sh' -- "$@"`
+TEMP=`getopt -o at:c: --long all,dry,targets:,command: -n 'getopt-template.bash' -- "$@"`
 if [ $? != 0 ] ; then echo "Terminating..." >&2 ; exit 1 ; fi
 eval set -- "$TEMP"
 
